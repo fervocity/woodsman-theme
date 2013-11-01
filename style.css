@@ -77,7 +77,7 @@ html {
 
 /* line 20, ../scss/style.scss */
 body {
-  background: url("../images/bg.jpg") repeat;
+  background: url("./images/bg.jpg") repeat;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-size: 1.4rem; }
@@ -152,8 +152,8 @@ a {
 
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot?2129899");
-  src: url("../font/fontello.eot?2129899#iefix") format("embedded-opentype"), url("../font/fontello.woff?2129899") format("woff"), url("../font/fontello.ttf?2129899") format("truetype"), url("../font/fontello.svg?2129899#fontello") format("svg");
+  src: url("./font/fontello.eot?2129899");
+  src: url("./font/fontello.eot?2129899#iefix") format("embedded-opentype"), url("./font/fontello.woff?2129899") format("woff"), url("./font/fontello.ttf?2129899") format("truetype"), url("./font/fontello.svg?2129899#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -272,42 +272,50 @@ header {
   width: 100%;
   max-width: 960px;
   margin: 15px auto;
-  min-width: 300px;
+  min-width: 287px;
   background: white;
   -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05); }
+  @media (max-width: 500px) {
+    /* line 1, ../scss/_content.scss */
+    .page-wrap {
+      margin: 0; } }
 
-/* line 10, ../scss/_content.scss */
+/* line 13, ../scss/_content.scss */
 .main-content {
   width: 66.666666666%;
   float: left;
   padding: 30px;
   background: white; }
   @media (max-width: 890px) {
-    /* line 10, ../scss/_content.scss */
+    /* line 13, ../scss/_content.scss */
     .main-content {
       width: 100%;
       float: none; } }
+  @media (max-width: 500px) {
+    /* line 13, ../scss/_content.scss */
+    .main-content {
+      padding: 15px; } }
 
-/* line 21, ../scss/_content.scss */
+/* line 27, ../scss/_content.scss */
 .introduction {
   padding-bottom: 45px; }
 
-/* line 26, ../scss/_content.scss */
+/* line 32, ../scss/_content.scss */
 .post-excerpt {
   position: relative;
   margin-top: 3px;
   padding-top: 45px;
   padding-bottom: 45px; }
-  /* line 33, ../scss/_content.scss */
+  /* line 39, ../scss/_content.scss */
   .post-excerpt .meta {
     width: 20%;
     position: absolute;
     left: 0;
     padding-top: 5px; }
     @media (max-width: 500px) {
-      /* line 33, ../scss/_content.scss */
+      /* line 39, ../scss/_content.scss */
       .post-excerpt .meta {
         display: block;
         width: 100%;
@@ -315,20 +323,20 @@ header {
         padding-top: 15px;
         font-style: italic;
         color: #999; }
-        /* line 45, ../scss/_content.scss */
+        /* line 51, ../scss/_content.scss */
         .post-excerpt .meta:before {
           content: "- "; } }
-  /* line 50, ../scss/_content.scss */
+  /* line 56, ../scss/_content.scss */
   .post-excerpt .contents {
     width: 80%;
     float: right; }
     @media (max-width: 500px) {
-      /* line 50, ../scss/_content.scss */
+      /* line 56, ../scss/_content.scss */
       .post-excerpt .contents {
         display: block;
         width: 100%;
         float: none; } }
-  /* line 59, ../scss/_content.scss */
+  /* line 65, ../scss/_content.scss */
   .post-excerpt .post-details {
     margin-top: 15px; }
 

@@ -2,9 +2,12 @@
 	width: 100%;
 	max-width: 960px; 
 	margin: $gutter/2 auto;
-	min-width: 300px;
+	min-width: 287px;
 	background: white;
-	@include box-shadow(0 0 0 5px rgba(black,0.05))
+	@include box-shadow(0 0 0 5px rgba(black,0.05));
+	@include breakpoint(smallmobile) {
+		margin: 0;
+	}
 }
 
 .main-content {
@@ -15,6 +18,9 @@
 	@include breakpoint(phablet) {
 		width: 100%;
 		float: none;
+	}
+	@include breakpoint(smallmobile) {
+		padding: $gutter/2;
 	}
 }
 
