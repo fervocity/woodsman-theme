@@ -1,0 +1,454 @@
+/*
+Theme name: 	Woodsman Theme
+Theme URI: 		http://codeboxers.com
+Description: 	Codeboxers screencast theme creation.
+Version: 		1.0
+Author:			Charles McNally
+Author URI: 	http://charlesmcnally.info
+Tags:			clean, blog, responsive, awesome,
+*/
+/* line 17, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 9, ../scss/_variables.scss */
+.introduction, .post-excerpt {
+  border-bottom: 1px solid #dedfd9; }
+
+/* line 13, ../scss/_variables.scss */
+.post-excerpt {
+  border-top: 1px solid #dedfd9; }
+
+/* line 16, ../scss/style.scss */
+html {
+  font-size: 10px; }
+
+/* line 20, ../scss/style.scss */
+body {
+  background: url("../images/bg.jpg") repeat;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+/* line 1, ../scss/_fixes.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 5, ../scss/_fixes.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 11, ../scss/_fixes.scss */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table; }
+
+/* line 16, ../scss/_fixes.scss */
+.cf:after {
+  clear: both; }
+
+/* line 1, ../scss/_type.scss */
+h1, h2, h3 {
+  font-family: Georgia, Times, "Times New Roman", serif; }
+
+/* line 5, ../scss/_type.scss */
+h1 {
+  font-size: 30px;
+  font-size: 3rem; }
+
+/* line 9, ../scss/_type.scss */
+h2 {
+  font-size: 26px;
+  font-size: 2.6rem; }
+
+/* line 13, ../scss/_type.scss */
+h3 {
+  font-size: 22px;
+  font-size: 2.2rem; }
+
+/* line 17, ../scss/_type.scss */
+h4, h5, p {
+  font-family: Georgia, Times, "Times New Roman", serif; }
+
+/* line 21, ../scss/_type.scss */
+h4 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+/* line 25, ../scss/_type.scss */
+h5 {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+/* line 29, ../scss/_type.scss */
+p {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+/* line 33, ../scss/_type.scss */
+ul li, ol li {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+/* line 38, ../scss/_type.scss */
+a {
+  color: #b97866; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?2129899");
+  src: url("../font/fontello.eot?2129899#iefix") format("embedded-opentype"), url("../font/fontello.woff?2129899") format("woff"), url("../font/fontello.ttf?2129899") format("truetype"), url("../font/fontello.svg?2129899#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?2129899#fontello') format('svg');
+  }
+}
+*/
+/* line 22, ../scss/_fontello.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  opacity: .8;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 53, ../scss/_fontello.scss */
+.icon-search:before {
+  content: '\e805'; }
+
+/* '' */
+/* line 54, ../scss/_fontello.scss */
+.icon-user:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 55, ../scss/_fontello.scss */
+.icon-comment:before {
+  content: '\e802'; }
+
+/* '' */
+/* line 56, ../scss/_fontello.scss */
+.icon-rss:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 57, ../scss/_fontello.scss */
+.icon-facebook-rect:before {
+  content: '\e803'; }
+
+/* '' */
+/* line 58, ../scss/_fontello.scss */
+.icon-twitter-bird:before {
+  content: '\e804'; }
+
+/* '' */
+/* line 2, ../scss/_header.scss */
+header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
+  /* line 6, ../scss/_header.scss */
+  header nav {
+    display: block; }
+    /* line 8, ../scss/_header.scss */
+    header nav ul {
+      list-style: none; }
+      /* line 10, ../scss/_header.scss */
+      header nav ul li {
+        width: 15%;
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        font-size: 1.6rem;
+        vertical-align: middle; }
+        /* line 16, ../scss/_header.scss */
+        header nav ul li a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
+      /* line 23, ../scss/_header.scss */
+      header nav ul li.logo {
+        width: 40%;
+        padding-top: 0; }
+      @media (max-width: 600px) {
+        /* line 8, ../scss/_header.scss */
+        header nav ul {
+          display: none;
+          visibility: hidden; } }
+  /* line 33, ../scss/_header.scss */
+  header select {
+    display: none;
+    visibility: hidden; }
+    @media (max-width: 600px) {
+      /* line 33, ../scss/_header.scss */
+      header select {
+        display: block;
+        visibility: visible;
+        width: 50%; } }
+
+/* line 1, ../scss/_content.scss */
+.page-wrap {
+  width: 100%;
+  max-width: 960px;
+  margin: 15px auto;
+  min-width: 300px;
+  background: white;
+  -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05); }
+
+/* line 10, ../scss/_content.scss */
+.main-content {
+  width: 66.666666666%;
+  float: left;
+  padding: 30px;
+  background: white; }
+  @media (max-width: 890px) {
+    /* line 10, ../scss/_content.scss */
+    .main-content {
+      width: 100%;
+      float: none; } }
+
+/* line 21, ../scss/_content.scss */
+.introduction {
+  padding-bottom: 45px; }
+
+/* line 26, ../scss/_content.scss */
+.post-excerpt {
+  position: relative;
+  margin-top: 3px;
+  padding-top: 45px;
+  padding-bottom: 45px; }
+  /* line 33, ../scss/_content.scss */
+  .post-excerpt .meta {
+    width: 20%;
+    position: absolute;
+    left: 0;
+    padding-top: 5px; }
+    @media (max-width: 500px) {
+      /* line 33, ../scss/_content.scss */
+      .post-excerpt .meta {
+        display: block;
+        width: 100%;
+        position: relative;
+        padding-top: 15px;
+        font-style: italic;
+        color: #999; }
+        /* line 45, ../scss/_content.scss */
+        .post-excerpt .meta:before {
+          content: "- "; } }
+  /* line 50, ../scss/_content.scss */
+  .post-excerpt .contents {
+    width: 80%;
+    float: right; }
+    @media (max-width: 500px) {
+      /* line 50, ../scss/_content.scss */
+      .post-excerpt .contents {
+        display: block;
+        width: 100%;
+        float: none; } }
+  /* line 59, ../scss/_content.scss */
+  .post-excerpt .post-details {
+    margin-top: 15px; }
+
+/* line 2, ../scss/_sidebar.scss */
+.sidebar {
+  width: 33.333333333%;
+  float: left;
+  padding: 30px;
+  background: #f4f4ee; }
+  /* line 7, ../scss/_sidebar.scss */
+  .sidebar h3, .sidebar h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-size: 1.6rem; }
+  @media (max-width: 890px) {
+    /* line 2, ../scss/_sidebar.scss */
+    .sidebar {
+      width: 100%;
+      float: none; } }
+
+/* line 17, ../scss/_sidebar.scss */
+.social {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dedfd9; }
+  /* line 18, ../scss/_sidebar.scss */
+  .social li {
+    display: inline-block;
+    width: 33%;
+    text-align: center; }
+
+/* line 1, ../scss/_modules.scss */
+.search-module {
+  border-top: 1px solid white;
+  border-bottom: 1px solid #dedfd9;
+  padding: 15px 0; }
+  /* line 5, ../scss/_modules.scss */
+  .search-module form {
+    position: relative; }
+  /* line 8, ../scss/_modules.scss */
+  .search-module input[type="text"] {
+    width: 100%;
+    height: 25px;
+    border: 1px solid #dedfd9;
+    padding-right: 35px;
+    -webkit-box-shadow: 0 1px 0 0 white;
+    -moz-box-shadow: 0 1px 0 0 white;
+    box-shadow: 0 1px 0 0 white; }
+  /* line 15, ../scss/_modules.scss */
+  .search-module button[type="submit"] {
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    background: none;
+    border: none;
+    font-family: fontello;
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #ccc; }
+
+/* line 27, ../scss/_modules.scss */
+.categories, .archives {
+  border-bottom: 1px solid #dedfd9;
+  border-top: 1px solid #fff;
+  padding: 15px 0; }
+  /* line 31, ../scss/_modules.scss */
+  .categories ul, .archives ul {
+    list-style: none; }
+    /* line 33, ../scss/_modules.scss */
+    .categories ul li, .archives ul li {
+      width: 45%;
+      display: inline-block; }
+  @media (max-width: 500px) {
+    /* line 40, ../scss/_modules.scss */
+    .categories ul, .categories h3, .categories h4, .categories .h3, .categories .h4, .archives ul, .archives h3, .archives h4, .archives .h3, .archives .h4 {
+      text-align: center; } }
+
+/* line 44, ../scss/_modules.scss */
+.gallery {
+  border-bottom: 1px solid #dedfd9;
+  border-top: 1px solid #fff;
+  padding: 15px 0; }
+  /* line 48, ../scss/_modules.scss */
+  .gallery ul {
+    font-size: 0px;
+    font-size: 0rem;
+    list-style: none; }
+    /* line 51, ../scss/_modules.scss */
+    .gallery ul li {
+      font-size: 14px;
+      font-size: 1.4rem;
+      width: 33.333333333%;
+      display: inline-block; }
+
+/* line 59, ../scss/_modules.scss */
+.advertising-module {
+  border-top: 1px solid #fff;
+  padding: 15px 0; }
+  /* line 62, ../scss/_modules.scss */
+  .advertising-module .caption {
+    margin-top: 15px;
+    font-size: 12px;
+    font-size: 1.2rem; }
+
+@media (max-width: 890px) {
+  /* line 68, ../scss/_modules.scss */
+  .categories, .archives, .gallery, .advertising-module {
+    width: 50%;
+    float: left; } }
+@media (max-width: 500px) {
+  /* line 68, ../scss/_modules.scss */
+  .categories, .archives, .gallery, .advertising-module {
+    width: 100%;
+    float: none; } }
+
+@media (max-width: 500px) {
+  /* line 79, ../scss/_modules.scss */
+  .gallery, .advertising-module {
+    text-align: center; } }
+
+/* line 39, ../scss/style.scss */
+footer {
+  text-align: center;
+  padding: 30px 0; }

@@ -1,0 +1,1 @@
+$(document).ready(function(){$("<select />").appendTo("nav");$("<option />",{selected:"selected",value:"",text:"Go to..."}).appendTo("nav select");$("nav a").each(function(){var e=$(this);$("<option />",{value:e.attr("href"),text:e.text()}).appendTo("nav select")});$("nav select").change(function(){window.location=$(this).find("option:selected").val()})});

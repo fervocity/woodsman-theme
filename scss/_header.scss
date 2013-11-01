@@ -1,0 +1,42 @@
+
+header {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	nav {
+		display: block;
+		ul {
+			list-style: none;
+			li {
+				width: 15%;
+				display: inline-block;
+				text-align: center;
+				@include font-size(16);
+				vertical-align: middle;
+				a {
+					color: white;
+					text-decoration: none;
+					text-transform: uppercase;
+					text-shadow: 0 1px 1px rgba(black, 0.8);
+				}
+			}
+			li.logo {
+				width: 40%;
+				padding-top: 0;
+			}
+		@include breakpoint(bigmobile) {
+			display: none;
+			visibility: hidden;
+		}
+		}
+	}
+	select {
+		display: none;
+		visibility: hidden;
+		@include breakpoint(bigmobile) {
+			display: block;
+			visibility: visible;
+			width: 50%;
+		}
+	}
+}

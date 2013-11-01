@@ -1,0 +1,42 @@
+/*
+Theme name: 	Woodsman Theme
+Theme URI: 		http://codeboxers.com
+Description: 	Codeboxers screencast theme creation.
+Version: 		1.0
+Author:			Charles McNally
+Author URI: 	http://charlesmcnally.info
+Tags:			clean, blog, responsive, awesome,
+*/
+
+
+@import "compass";
+@import "compass/reset";
+@import "variables";
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background: url('../images/bg.jpg') repeat;
+	@include bodyfont;
+	@include font-size(14);
+
+}
+
+@import "fixes";
+
+@import "type";
+
+@import "header";
+
+@import "content";
+
+@import "sidebar";
+
+@import "modules";
+
+footer {
+	text-align: center;
+	padding: $gutter 0;
+}

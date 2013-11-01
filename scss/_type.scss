@@ -1,0 +1,40 @@
+h1,h2,h3 {
+	@include headerfont;
+}
+
+h1 {
+	@include font-size(30);
+}
+
+h2 {
+	@include font-size(26);
+}
+
+h3 {
+	@include font-size(22);
+}
+
+h4,h5,p {
+	@include bodyfont;
+}
+
+h4 {
+	@include font-size(18);
+}
+
+h5 {
+	@include font-size(16);
+}
+
+p {
+	@include font-size(14);
+}
+
+ul li, ol li {
+	@include font-size(14);
+}
+
+
+a { color: $emphasize; }
+
+@import "fontello";

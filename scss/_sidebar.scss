@@ -1,0 +1,26 @@
+
+.sidebar {
+	width: 33.333333333%;
+	float: left;
+	padding: 30px;
+	background: $sidebarbg;
+	h3,h4 {
+		margin-bottom: $gutter/1.5;
+		@include font-size(16);
+	}
+	@include breakpoint(phablet) {
+		width: 100%;
+		float: none;
+	}
+}
+
+.social {
+	li {
+		display: inline-block;
+		width: 33%;
+		text-align: center;
+	}
+	padding-bottom: $gutter/2;
+	border-bottom: 1px solid $sidebarbordercol;
+}
+

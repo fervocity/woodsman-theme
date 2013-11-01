@@ -1,0 +1,44 @@
+$sidebarbg: #f4f4ee;
+$emphasize: #b97866;
+$bordercol: #dedfd9;
+
+$sidebarbordercol: #dedfd9;
+
+$gutter: 30px;
+
+%border-bottom {
+	border-bottom: 1px solid $bordercol;
+}
+
+%border-top {
+	border-top: 1px solid $bordercol;
+}
+
+@mixin font-size($sizeValue){
+	font-size: $sizeValue + px;
+	font-size: ($sizeValue /10) + rem;
+}
+
+
+@mixin headerfont {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+@mixin bodyfont {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+@mixin breakpoint($point) {
+	@if $point == smallmobile {
+		@media (max-width: 500px) { @content; }
+	}
+	@if $point == bigmobile {
+		@media (max-width: 600px) { @content; }
+	}
+	@if $point == phablet {
+		@media (max-width: 890px) { @content; }
+	}
+	@if $point == tablet {
+		@media (max-width: 960px) { @content; }
+	}
+}
